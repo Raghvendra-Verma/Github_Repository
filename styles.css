@@ -1,0 +1,154 @@
+/* body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+  background-color: #fff; /* Container background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .loader {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+
+/* profile styling */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db; /* Profile section background color */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px;
+  }
+  
+  .user-profile {
+    margin-right: 20px;
+  }
+  
+  .user-profile img {
+    width: 100px; /* Adjust the width of the profile photo */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .profile-details {
+    text-align: left;
+    color: #fff; /* Text color for profile details */
+  }
+  
+  .profile-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .profile-details p {
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .repository-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .repository-item {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    width: 48%;
+    box-sizing: border-box;
+    background-color: #fff; /* Repository item background color */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  /* position: relative; */
+  }
+
+
+  .repository-item:hover {
+    background-color: #f8f8f8; /* Light background on hover */
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination-btn {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .pagination-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination-number {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  button {
+    margin: 0 5px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media (max-width: 600px) {
+    /* Adjust styling for smaller screens */
+    .repository-item {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+   .language-button {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+  } 
